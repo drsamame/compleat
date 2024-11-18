@@ -39,6 +39,8 @@ const config: Config = {
 				degradem: "url('/images/bg_degrade_m.webp')",
 				service1: "url('/images/service1.webp')",
 				service2: "url('/images/service2.webp')",
+				bannerProduct: "url('/images/sachets_compleat_1.webp')",
+				bannerBlog: "url('/images/blogbg.webp')",
 				star: "url('/images/star.webp')",
 			},
 		},

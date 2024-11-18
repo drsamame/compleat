@@ -21,7 +21,6 @@ const properties = [
 			'What is Website Architecture — How to Build a Search-Friendly Site',
 	},
 ];
-
 function Detail() {
 	return (
 		<section className="container gap-9 lg:flex pt-20">
@@ -51,7 +50,7 @@ function Detail() {
 							<h6 className="mb-3 text-14-bold text-gray-300 tracking-widest">
 								{title}
 							</h6>
-							<p className="text-20-regula tracking-[0.04px]">{description}</p>
+							<p className="text-20-regular tracking-[0.04px]">{description}</p>
 						</div>
 					</div>
 				))}

@@ -73,16 +73,16 @@ function Footer() {
 				</div>
 				<div className=" pt-10 pb-5 bg-base justify-between items-center flex-col lg:flex-row flex lg:inline-flex">
 					<div className="flex-wrap flex flex-row p-2.5 justify-center items-center gap-6 text-light-400  text-16-light">
-						<Link href={'/'} className="footer-link">
+						<Link href={'/producto'} className="footer-link">
 							Complementos
 						</Link>
 						<Link href={'/'} className="footer-link">
 							Nuestra clínica
 						</Link>
-						<Link href={'/'} className="footer-link">
+						<Link href={'/nosotros'} className="footer-link">
 							¿Quiénes somos?
 						</Link>
-						<Link href={'/'} className="footer-link">
+						<Link href={'/blog'} className="footer-link">
 							Nuestro Blog
 						</Link>
 						<Link href={'/'} className="footer-link">

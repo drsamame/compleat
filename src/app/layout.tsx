@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
 import Header from '@/app/components/Header';
+import Footer from '@/components/Footer';
 
 const fontSans = localFont({
 	src: [
@@ -26,9 +27,8 @@ const fontSans = localFont({
 			style: 'normal',
 		},
 	],
-   variable: '--font-sans'
+	variable: '--font-sans',
 });
-
 
 export const metadata: Metadata = {
 	title: 'CompleAT',
@@ -47,6 +47,7 @@ export default function RootLayout({
 					<Header></Header>
 				</header>
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

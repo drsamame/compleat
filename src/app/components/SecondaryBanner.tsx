@@ -17,10 +17,10 @@ function SecondaryBanner() {
 					PROMESA
 				</div>
 			</div>
-			<div className="w-[240px] lg:w-auto lg:m-w-[795px] text-light-400 text-[28px] lg:text-32-bold leading-10">
+			<p className="w-[240px] lg:w-auto lg:m-w-[795px] text-light-400 lg:text-32-bold leading-10">
 				Con cada esfuerzo, te acercas a tu mejor versión Empieza hoy y
 				transforma tu vida.
-			</div>
+			</p>
 		</div>
 	);
 }

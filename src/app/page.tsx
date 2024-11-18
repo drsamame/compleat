@@ -4,7 +4,6 @@ import SecondaryBanner from './components/SecondaryBanner';
 import Services from '@/app/components/Services';
 import Testimonial from '@/components/Testimonial';
 import JoinUs from '@/components/JoinUs';
-import Footer from '@/components/Footer';
 
 export default function Home() {
 	return (
@@ -16,8 +15,9 @@ export default function Home() {
 			</section>
 			<Services />
 			<Testimonial />
-			<JoinUs />
-			<Footer />
+			<div className="max-w-[1120px] mx-auto">
+				<JoinUs />
+			</div>
 		</>
 	);
 }

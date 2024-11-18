@@ -64,7 +64,7 @@ function NavBar() {
 				>
 					<div className="flex-col lg:flex-row  justify-center items-center lg:gap-6 flex">
 						<Link
-							href="/complementos"
+							href="/producto"
 							className="nav-link"
 							onClick={handleClick}
 						>
