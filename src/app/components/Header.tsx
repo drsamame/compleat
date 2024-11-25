@@ -6,7 +6,7 @@ function Header() {
 	return (
 		<>
 			<div className="w-full h-11 py-3 bg-base justify-center items-center gap-5 inline-flex">
-				<div className="container mx-auto relative flex justify-center">
+				<div className=" md:container mx-auto relative flex justify-center">
 					<div className="w-5 h-5 justify-center items-center hidden lg:flex">
 						<div className="relative flex-col justify-start items-start flex">
 							<Image

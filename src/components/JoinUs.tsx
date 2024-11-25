@@ -3,7 +3,7 @@ import React from 'react';
 function JoinUs() {
 	return (
 		<section className="w-full mb-28">
-				<div className="w-[320px] block mx-auto lg:w-full  px-8 lg:px-16 py-12 bg-gray-500 rounded-[32px] justify-center items-center gap-16 flex-col lg:flex-row lg:inline-flex">
+				<div className="w-full block mx-auto lg:w-full  px-7 lg:px-16 py-12 bg-gray-500 rounded-[32px] justify-center items-center gap-16 flex-col lg:flex-row lg:inline-flex">
 					<div className="grow shrink basis-0 flex-col justify-center items-start gap-5  lg:inline-flex">
 						<div className="self-stretch text-base text-40-regular  lg:mb-0 mb-5">
 							Únete a nuestra comunidad

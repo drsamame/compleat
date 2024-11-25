@@ -78,7 +78,7 @@ function NavBar() {
 						</Link>
 					</div>
 					<div className="lg:flex hidden w-[166px] h-[41px] px-[30px] justify-center items-center">
-						<div className="grow shrink basis-0 self-stretch pl-[0.20px] pr-[0.03px] pt-[0.19px] pb-[0.05px] justify-center items-center inline-flex">
+						<Link href='/' className="grow shrink basis-0 self-stretch pl-[0.20px] pr-[0.03px] pt-[0.19px] pb-[0.05px] justify-center items-center inline-flex">
 							<div className="w-[105.77px] h-[40.77px] relative">
 								<Image
 									width="105"
@@ -87,7 +87,7 @@ function NavBar() {
 									alt="logo"
 								></Image>
 							</div>
-						</div>
+						</Link>
 					</div>
 					<div className="justify-start items-center gap-5 lg:gap-4 flex lg:flex-row flex-col">
 						<div className="w-full lg:w-auto  flex-col lg:flex-row grow shrink basis-0  justify-start items-center lg:gap-6 flex">

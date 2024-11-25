@@ -8,7 +8,7 @@ function Product() {
 	return (
 		<section className="container mt-6">
 			<ProductBanner />
-			<section className="text-center mb-12 text-base text-48-regular  leading-[56px]">
+			<section className="text-center mb-12 text-[40px] md:text-48-regular leading-[56px]">
 				Nuestros mejores productos
 				<br />& big deals
 			</section>

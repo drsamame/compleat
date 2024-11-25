@@ -3,10 +3,10 @@ import React from 'react';
 
 function ProductBanner() {
 	return (
-		<div className="w-full mb-28 relative bg-bannerProduct bg-[length:100%] justify-between items-center lg:items-center px-4 py-10 lg:px-[60px] lg:py-[50px] lg:h-[489px] rounded-[40px] flex-col-reverse lg:flex-row flex gap-4">
+		<div className="hidden w-full mb-28 relative bg-bannerProduct bg-[length:100%] justify-between items-center lg:items-center px-4 py-10 lg:px-[60px] lg:py-[50px] lg:h-[489px] rounded-[40px] flex-col-reverse lg:flex-row md:flex gap-4">
 			<div className="left">
 				<div className="w-[357px] h-52 p-8 bg-light-400 rounded-lg flex-col justify-start items-start gap-4 inline-flex">
-					<div className="w-[306px] text-32-regular leading-10">
+					<div className="max-w-[306px] text-32-regular leading-10">
 						Nuestros mejores complementos.
 					</div>
 					<Link

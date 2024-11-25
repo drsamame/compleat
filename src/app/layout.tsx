@@ -7,22 +7,17 @@ import Footer from '@/components/Footer';
 const fontSans = localFont({
 	src: [
 		{
-			path: './fonts/Aspekta-350.woff2',
+			path: './fonts/Aspekta-300.woff2',
 			weight: '300',
 			style: 'normal',
 		},
 		{
-			path: './fonts/Aspekta-450.woff2',
+			path: './fonts/Aspekta-400.woff2',
 			weight: '400',
 			style: 'normal',
 		},
 		{
-			path: './fonts/Aspekta-550.woff2',
-			weight: '500',
-			style: 'normal',
-		},
-		{
-			path: './fonts/Aspekta-650.woff2',
+			path: './fonts/Aspekta-700.woff2',
 			weight: '700',
 			style: 'normal',
 		},

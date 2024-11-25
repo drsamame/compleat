@@ -2,181 +2,227 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #F8F9FA;
-  --foreground: #212529;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #F8F9FA;
-    --foreground: #212529;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-}
-
 @layer base {
-  /* Remove scrollbar */
-  .remove-scrollbar::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-    border-radius: 0px;
-  }
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+	:root {
+		--background: #f8f9fa;
+		--foreground: 240 10% 3.9%;
+		--card: 0 0% 100%;
+		--card-foreground: 240 10% 3.9%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 240 10% 3.9%;
+		--primary: 240 5.9% 10%;
+		--primary-foreground: 0 0% 98%;
+		--secondary: 240 4.8% 95.9%;
+		--secondary-foreground: 240 5.9% 10%;
+		--muted: 240 4.8% 95.9%;
+		--muted-foreground: 240 3.8% 46.1%;
+		--accent: 240 4.8% 95.9%;
+		--accent-foreground: 240 5.9% 10%;
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 0 0% 98%;
+		--border: 240 5.9% 90%;
+		--input: 240 5.9% 90%;
+		--ring: 240 5.9% 10%;
+		--radius: 0.5rem;
+		--chart-1: 12 76% 61%;
+		--chart-2: 173 58% 39%;
+		--chart-3: 197 37% 24%;
+		--chart-4: 43 74% 66%;
+		--chart-5: 27 87% 67%;
+	}
 
-  .remove-scrollbar::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  .remove-scrollbar::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 0px;
-  }
-
-  .remove-scrollbar::-webkit-scrollbar-thumb:hover {
-    /* background: #1e2238; */
-    background: transparent;
-  }
+	.dark {
+		--background: #f8f9fa;
+		--foreground: 0 0% 98%;
+		--card: 240 10% 3.9%;
+		--card-foreground: 0 0% 98%;
+		--popover: 240 10% 3.9%;
+		--popover-foreground: 0 0% 98%;
+		--primary: 0 0% 98%;
+		--primary-foreground: 240 5.9% 10%;
+		--secondary: 240 3.7% 15.9%;
+		--secondary-foreground: 0 0% 98%;
+		--muted: 240 3.7% 15.9%;
+		--muted-foreground: 240 5% 64.9%;
+		--accent: 240 3.7% 15.9%;
+		--accent-foreground: 0 0% 98%;
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 0 0% 98%;
+		--border: 240 3.7% 15.9%;
+		--input: 240 3.7% 15.9%;
+		--ring: 240 4.9% 83.9%;
+		--chart-1: 220 70% 50%;
+		--chart-2: 160 60% 45%;
+		--chart-3: 30 80% 55%;
+		--chart-4: 280 65% 60%;
+		--chart-5: 340 75% 55%;
+	}
 }
 
 @layer utilities {
-  /* ===== TYPOGRAPHY */
-  .text-12-regular{
-    @apply text-[12px] xl:text-[14px] lg:text-[10px] leading-[12px] font-[400]
-  }
+	/* ===== TYPOGRAPHY */
+	.text-12-light {
+		@apply text-[12px] font-[300];
+	}
 
-  .text-12-bold{
-    @apply text-[12px] xl:text-[14px] lg:text-[10px] leading-[12px] font-[700]
-  }
+	.text-12-regular {
+		@apply text-[12px] xl:text-[14px] lg:text-[10px] leading-[12px] font-[400];
+	}
 
-  .text-14-regular{
-    @apply text-[14px] xl:text-[14px] lg:text-[12px] leading-[14px] font-[400]
-  }
+	.text-12-bold {
+		@apply text-[12px] xl:text-[14px] lg:text-[10px] leading-[12px] font-[700];
+	}
 
-  .text-14-semi-bold{
-    @apply text-[14px] xl:text-[14px] lg:text-[12px] leading-[14px] font-[500]
-  }
+	.text-14-light {
+		@apply text-[14px] xl:text-[14px] lg:text-[12px] font-[300];
+	}
 
-  .text-14-bold{
-    @apply text-[14px] xl:text-[14px] lg:text-[12px] leading-[16px] font-[700]
-  }
+	.text-14-regular {
+		@apply text-[14px] xl:text-[14px] lg:text-[12px] font-[400];
+	}
 
-  .text-16-light{
-    @apply text-[16px] xl:text-[16px] lg:text-[14px] leading-[16px] font-[300]
-  }
+	.text-14-semi-bold {
+		@apply text-[14px] xl:text-[14px] lg:text-[12px] font-[500];
+	}
 
-  .text-16-regular{
-    @apply text-[16px] xl:text-[16px] lg:text-[14px] leading-[16px] font-[400]
-  }
+	.text-14-bold {
+		@apply text-[14px] xl:text-[14px] lg:text-[12px] font-[700];
+	}
 
-  .text-16-bold{
-    @apply text-[16px] xl:text-[16px] lg:text-[16px] leading-[16px] font-[700]
-  }
+	.text-16-light {
+		@apply text-[16px] xl:text-[16px] lg:text-[14px] font-[300];
+	}
 
-  .text-18-regular{
-    @apply text-[18px] xl:text-[18px] lg:text-[18px] leading-[18px] font-[400]
-  }
+	.text-16-regular {
+		@apply text-[16px] xl:text-[16px] lg:text-[14px] font-[400];
+	}
 
-  .text-18-bold{
-    @apply text-[18px] xl:text-[18px] lg:text-[16px] leading-[18px] font-[700]
-  }
+	.text-16-bold {
+		@apply text-[16px] xl:text-[16px] lg:text-[16px] font-[700];
+	}
 
-  .text-20-regular{
-    @apply text-[20px] xl:text-[20px] lg:text-[18px] leading-[16px] font-[400]
-  }
+	.text-18-regular {
+		@apply text-[18px] xl:text-[18px] lg:text-[18px] leading-[18px] font-[400];
+	}
 
-  .text-24-light{
-    @apply text-[24px] xl:text-[24px] lg:text-[22px] leading-[24px] font-[300]
-  }
+	.text-18-bold {
+		@apply text-[18px] xl:text-[18px] lg:text-[16px] leading-[18px] font-[700];
+	}
 
-  .text-24-bold{
-    @apply text-[24px] xl:text-[24px] lg:text-[22px] leading-[24px] font-[700]
-  }
+	.text-20-regular {
+		@apply text-[20px] xl:text-[20px] lg:text-[18px] font-[400];
+	}
 
-  .text-28-regular{
-    @apply text-[28px] xl:text-[28px] lg:text-[22px] leading-[28px] font-[400]
-  }
-  
-  .text-32-bold{
-    @apply text-[28px] xl:text-[32px] lg:text-[30px] leading-[32px] font-[700]
-  }
+	.text-20-bold {
+		@apply text-[20px] xl:text-[20px] lg:text-[18px] font-[700];
+	}
 
-  .text-32-regular{
-    @apply text-[28px] xl:text-[32px] lg:text-[30px] leading-[32px] font-[400]
-  }
+	.text-24-light {
+		@apply text-[24px] xl:text-[24px] lg:text-[22px] font-[300];
+	}
 
+	.text-24-regular {
+		@apply text-[24px] xl:text-[24px] lg:text-[22px] font-[400];
+	}
 
-  .text-40-regular {
-    @apply text-[40px] xl:text-[40px] lg:text-[38px] leading-[40px] font-[400]
-  }
+	.text-24-bold {
+		@apply text-[24px] xl:text-[24px] lg:text-[22px] font-[700];
+	}
 
-  .text-48-regular {
-    @apply text-[48px] xl:text-[48px] lg:text-[46px] leading-[48px] font-[400]
-  }
+	.text-28-regular {
+		@apply text-[28px] xl:text-[28px] lg:text-[22px] leading-[28px] font-[400];
+	}
 
-  .text-48-bold {
-    @apply text-[48px] xl:text-[48px] lg:text-[46px] leading-[48px] font-[700]
-  }
+	.text-32-bold {
+		@apply text-[28px] xl:text-[32px] lg:text-[30px] font-[700];
+	}
 
+	.text-32-regular {
+		@apply text-[28px] xl:text-[32px] lg:text-[30px] font-[400];
+	}
 
-  .text-56-bold{
-    @apply text-[56px] xl:text-[56px] lg:text-[54px] leading-[56px] font-[700]
-  }
+	.text-40-regular {
+		@apply text-[40px] xl:text-[40px] lg:text-[38px] leading-[40px] font-[400];
+	}
 
-  .text-degrade {
-    @apply bg-clip-text relative z-20 top-[3px] lg:top-[15px];
-    background: linear-gradient(270deg, #fd2b14 0%, #fd481a 15%, #fe9428 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+	.text-48-regular {
+		@apply text-[48px] xl:text-[48px] lg:text-[46px] font-[400];
+	}
 
-  .text-box-degrade::after {
-    @apply absolute left-0 bottom-[2px] z-10 text-[#ffbc30];
-    content: attr(data-text);
-  }
+	.text-48-bold {
+		@apply text-[48px] xl:text-[48px] lg:text-[46px] font-[700];
+	}
 
-  .text-green-blue {
-    @apply bg-clip-text;
-    background-clip: text !important;
-    -webkit-text-fill-color: transparent;
-    background: linear-gradient(270deg, #6771FE 0%, #5786E6 15.5%, #20C997 81%);
-  }
+	.text-56-bold {
+		@apply text-[56px] xl:text-[56px] lg:text-[54px] leading-[56px] font-[700];
+	}
 
-   /* ===== BUTTONS */
-  .btn-primary {
-    @apply leading-none  text-light-400 text-16-bold tracking-wide bg-base px-8 py-4 rounded-full;
-  }
-  .btn-outline {
-    @apply leading-none text-base text-16-bold border-2 border-base tracking-wide px-8 py-4 rounded-full;
-  }
+	.text-degrade {
+		@apply bg-clip-text relative z-20 top-[3px] lg:top-[15px];
+		background: linear-gradient(270deg, #fd2b14 0%, #fd481a 15%, #fe9428 100%);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 
-   /* ===== UI */
-   .nav-link {
-    @apply lg:border-none border-b  border-b-gray-200 w-full lg:w-[120px] pt-4 pb-6 px-8 lg:p-0 text-center text-base text-14-semi-bold leading-none tracking-wide;
-   }
+	.text-box-degrade::after {
+		@apply absolute left-0 bottom-[2px] z-10 text-[#ffbc30];
+		content: attr(data-text);
+	}
 
-   .footer-link {
-    @apply tracking-wide w-full text-center text-16-light  lg:text-left lg:w-auto basis-[40%] lg:basis-auto
-   }
+	.text-green-blue {
+		@apply bg-clip-text;
+		background-clip: text !important;
+		-webkit-text-fill-color: transparent;
+		background: linear-gradient(270deg, #6771fe 0%, #5786e6 15.5%, #20c997 81%);
+	}
 
-   .arrow-banner{
-    @apply absolute w-[48px] h-[48px] rounded-full shadow-[0px_2px_20px_0px_#0D19851F];
-    background: url("/images/glyph_arrow_down.webp") no-repeat center center #f8f9fa
-   }
+	/* ===== BUTTONS */
+	.btn-primary {
+		@apply leading-none  text-light-400 text-16-bold tracking-wide bg-base px-8 py-4 rounded-full;
+	}
+	.btn-outline {
+		@apply leading-none text-base text-16-bold border-2 border-base tracking-wide px-8 py-4 rounded-full;
+	}
 
-   .service-box{
-    @apply bg-cover grow shrink lg:basis-0 h-[390px] lg:h-[500px] p-5 lg:px-14 lg:py-10 rounded-[20px] justify-end lg:justify-center lg:items-end gap-2.5 flex flex-col lg:flex-row lg:w-auto w-[320px]
-   }
+	/* ===== UI */
+	.nav-link {
+		@apply lg:border-none border-b  border-b-gray-200 w-full lg:w-[120px] pt-4 pb-6 px-8 lg:p-0 text-center text-base text-14-semi-bold leading-none tracking-wide;
+	}
 
-  .background-black-orange {
-    background: linear-gradient(180deg, #fd2b14 0%, #fd481a 15%, #fe9428 100%);
-  }
+	.footer-link {
+		@apply tracking-wide w-full text-center text-16-light  lg:text-left lg:w-auto basis-[40%] lg:basis-auto;
+	}
 
+	.arrow-banner {
+		@apply absolute w-[48px] h-[48px] rounded-full shadow-[0px_2px_20px_0px_#0D19851F];
+		background: url('/images/glyph_arrow_down.webp') no-repeat center center
+			#f8f9fa;
+	}
+
+	.service-box {
+		@apply bg-cover grow shrink lg:basis-0 h-[390px] lg:h-[500px] p-5 lg:px-14 lg:py-10 rounded-[20px] justify-end lg:justify-center lg:items-end gap-2.5 flex flex-col lg:flex-row lg:w-auto w-[320px];
+	}
+
+	.background-black-orange {
+		background: linear-gradient(180deg, #fd2b14 0%, #fd481a 15%, #fe9428 100%);
+	}
+	.label-shadcn {
+		@apply !text-[14px] text-base font-[400];
+	}
+	.shad-input {
+		@apply !text-[16px] !tracking-wide font-[300] h-12;
+	}
+	.shad-textarea {
+		@apply !text-[16px] border px-4 py-3 border-[#495057] !tracking-wide font-[300] h-12;
+	}
 }
 
 .slick-list {
-  padding:0 20% 0 0 !important;
-  }
+	padding: 0 20% 0 0 !important;
+}

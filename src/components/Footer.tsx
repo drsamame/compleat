@@ -7,7 +7,7 @@ function Footer() {
 		<footer className="bg-base flex w-full rounded-t-[20px]">
 			<div className="container py-8 rounded-tl-3xl rounded-tr-3xl items-stretch justify-between  flex-col flex">
 				<div className=" items-center justify-between flex-col lg:flex-row flex lg:inline-flex">
-					<div className="max-w-[80%] w-full flex-col justify-start items-start inline-flex">
+					<div className="max-w-full md:max-w-[80%] w-full flex-col justify-start items-start inline-flex">
 						<div className="flex-col justify-start items-start mt-7 flex">
 							<Image
 								width="123"
@@ -18,7 +18,7 @@ function Footer() {
 							<p className="text-light-400 mt-4 lg:mt-9 mb-6 text-[18px] lg:text-20-regular leading-loose tracking-wide">
 								Suscríbete a nuestro blog
 							</p>
-							<div className="text-light-400 w-[300px] lg:w-auto text-[40px] font-[400] lg:text-48-bold">
+							<div className="text-light-400 w-full md:w-[280px] lg:w-auto text-[40px] font-[400] lg:text-48-bold">
 								Obtén 10% de dcto
 							</div>
 						</div>

@@ -5,11 +5,11 @@ import Image from 'next/image';
 function OurTeam() {
 	return (
 		<>
-			<div className="container mt-16 mb-16">
-				<div className="justify-start items-start gap-[70px] mb-16 inline-flex">
-					<div className="max-w-[546px] flex-col justify-start items-start gap-[83px] inline-flex">
+			<div className="justify-center w-full items-start bg-white  mb-16 inline-flex py-8 md:py-24">
+				<div className="container flex gap-0 md:gap-[70px]">
+					<div className="max-w-full md:max-w-[546px] flex-col justify-start items-start gap-[83px] inline-flex">
 						<div className="flex-col justify-start items-start gap-10 flex">
-							<h1 className="text-base text-48-regular !leading-[56px]">
+							<h1 className="text-base text-28-regular md:text-48-regular md:!leading-[56px]">
 								Tenemos una{' '}
 								<span className="text-degrade !top-0">promesa </span>
 								con nuestros clientes
@@ -36,7 +36,7 @@ function OurTeam() {
 									<div className="text-base text-28-regular tracking-tight">
 										Nuestra visión
 									</div>
-									<h3 className="text-gray-300 !leading-[32px] text-16-light tracking-wide">
+									<h3 className="text-gray-300 !leading-[28px] text-16-light tracking-wide">
 										Ser un referente en bienestar, promoviendo hábitos
 										saludables y empoderando a las personas para transformar su
 										salud con un enfoque personalizado
@@ -56,7 +56,7 @@ function OurTeam() {
 									<div className="text-base text-28-regular tracking-tight">
 										Nuestra misión
 									</div>
-									<h3 className="text-gray-300 !leading-[32px] text-16-light tracking-wide">
+									<h3 className="text-gray-300 !leading-[28px] text-16-light tracking-wide">
 										Brindar asesoramiento personalizado para ayudar a los
 										pacientes a alcanzar sus objetivos de salud y promover
 										hábitos alimenticios sostenibles.
@@ -65,15 +65,19 @@ function OurTeam() {
 							</div>
 						</div>
 					</div>
-					<Image
-						alt=""
-						className="grow shrink basis-0 h-[621px] pl-6 pb-6 rounded-[20px]"
-						src="/images/promise.webp"
-						width={694}
-						height={621}
-					/>
+					<div className="hidden md:block overflow-hidden">
+						<Image
+							alt="chicas gimnasio"
+							className="-right-6 relative block pb-6 rounded-[20px]"
+							src="/images/promise.webp"
+							width={694}
+							height={621}
+						/>
+					</div>
 				</div>
-				<div className="max-w-[1120px] mx-auto ">
+			</div>
+			<div className="container mt-0 mb-16">
+				<div className="max-w-[1120px] bg-light-400 mx-auto ">
 					<JoinUs />
 				</div>
 			</div>
